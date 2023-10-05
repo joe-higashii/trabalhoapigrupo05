@@ -1,7 +1,7 @@
 - criar adicionar;
 - criar getPorId;
 
-CRUD -
+CRUD:
 
 CREATE - adicionaRaca
 
