@@ -1,2 +1,28 @@
 - criar adicionar;
 - criar getPorId;
+
+CRUD -
+
+CREATE - adicionaRaca
+
+READ - listaRacas
+
+UPTADE - alterarDadosRaca
+
+DELETE - adotaRaca
+
+
+dependência do swagger:
+
+		<dependency>
+    		<groupId>org.springdoc</groupId>
+    		<artifactId>springdoc-openapi-ui</artifactId>
+    		<version>1.7.0</version>
+		</dependency>
+INCLUIR NO ARQUIVO POM.XML
+
+
+http://localhost:8080/swagger-ui/index.html#/
+
+
+OBS.: BAIXAR A EXTENSÃO OPENAPI DO SWAGGER
