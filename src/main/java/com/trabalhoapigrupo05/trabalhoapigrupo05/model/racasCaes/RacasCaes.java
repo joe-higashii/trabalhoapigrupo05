@@ -8,9 +8,13 @@ public class RacasCaes {
 
     private double tamanho;
 
-    private String paisOrigem;
+    private int idade;
 
-    private double pesoMedio;
+    private double peso;
+
+    private String fotoCao;
+
+    private String formularioAdocao;
 
     public long getId() {
         return id;
@@ -36,20 +40,36 @@ public class RacasCaes {
         this.tamanho = tamanho;
     }
 
-    public String getPaisOrigem() {
-        return paisOrigem;
+    public int getIdade() {
+        return idade;
     }
 
-    public void setPaisOrigem(String paisOrigem) {
-        this.paisOrigem = paisOrigem;
+    public void setIdade(int idade) {
+        this.idade = idade;
     }
 
-    public double getPesoMedio() {
-        return pesoMedio;
+    public double getPeso() {
+        return peso;
     }
 
-    public void setPesoMedio(double pesoMedio) {
-        this.pesoMedio = pesoMedio;
+    public void setPeso(double peso) {
+        this.peso = peso;
+    }
+
+    public String getFotoCao() {
+        return fotoCao;
+    }
+
+    public void setFotoCao(String fotoCao) {
+        this.fotoCao = fotoCao;
+    }
+
+    public String getFormularioAdocao() {
+        return formularioAdocao;
+    }
+
+    public void setFormularioAdocao(String formularioAdocao) {
+        this.formularioAdocao = formularioAdocao;
     }
 
 }
