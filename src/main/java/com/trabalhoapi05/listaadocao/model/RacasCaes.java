@@ -1,75 +1,48 @@
-package com.trabalhoapigrupo05.trabalhoapigrupo05.model.racasCaes;
+package com.trabalhoapi05.listaadocao.model;
 
 public class RacasCaes {
-
+    
     private long id;
-
     private String raca;
-
-    private double tamanho;
-
+    private String tamanho;
     private int idade;
-
     private double peso;
-
-    private String fotoCao;
-
-    private String formularioAdocao;
-
+    private String imagem;
+    
     public long getId() {
         return id;
     }
-
     public void setId(long id) {
         this.id = id;
     }
-
     public String getRaca() {
         return raca;
     }
-
     public void setRaca(String raca) {
         this.raca = raca;
     }
-
-    public double getTamanho() {
+    public String getTamanho() {
         return tamanho;
     }
-
-    public void setTamanho(double tamanho) {
+    public void setTamanho(String tamanho) {
         this.tamanho = tamanho;
     }
-
     public int getIdade() {
         return idade;
     }
-
     public void setIdade(int idade) {
         this.idade = idade;
     }
-
     public double getPeso() {
         return peso;
     }
-
     public void setPeso(double peso) {
         this.peso = peso;
     }
-
-    public String getFotoCao() {
-        return fotoCao;
+    public String getImagem() {
+        return imagem;
     }
-
-    public void setFotoCao(String fotoCao) {
-        this.fotoCao = fotoCao;
+    public void setImagem(String imagem) {
+        this.imagem = imagem;
     }
-
-    public String getFormularioAdocao() {
-        return formularioAdocao;
-    }
-
-    public void setFormularioAdocao(String formularioAdocao) {
-        this.formularioAdocao = formularioAdocao;
-    }
-
 }

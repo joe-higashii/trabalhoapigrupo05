@@ -39,6 +39,17 @@
     		<artifactId>springdoc-openapi-ui</artifactId>
     		<version>1.7.0</version>
 		</dependency>
+				<dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>1.18.22</version> <!-- Verifique a versão mais recente no site oficial do Lombok -->
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>2.11.0</version> <!-- Verifique a versão mais recente no repositório Maven -->
+        </dependency>
 	</dependencies>
 
 	<build>

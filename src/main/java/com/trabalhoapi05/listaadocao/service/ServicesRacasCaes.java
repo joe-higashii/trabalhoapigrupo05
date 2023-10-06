@@ -1,4 +1,4 @@
-package com.trabalhoapigrupo05.service;
+package com.trabalhoapi05.listaadocao.service;
 
 import java.util.InputMismatchException;
 import java.util.List;
@@ -6,12 +6,13 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.trabalhoapigrupo05.model.RacasCaes;
-import com.trabalhoapigrupo05.repository.RepositoryRacasCaes;
+import com.trabalhoapi05.listaadocao.model.RacasCaes;
+import com.trabalhoapi05.listaadocao.repository.RepositoryRacasCaes;
 
 @Service
 public class ServicesRacasCaes {
     
+
     @Autowired
     private RepositoryRacasCaes repositoryRacasCaes;
 
@@ -48,4 +49,10 @@ public class ServicesRacasCaes {
     public void adotaRaca(long id) {
         repositoryRacasCaes.adotaRaca(id);
     }
+
+    public List<RacasCaes> buscarDoguinhos(long id) {
+
+        return repositoryRacasCaes.buscarDoguinhos(id);
+    }
+
 }

@@ -1,11 +1,11 @@
-package com.trabalhoapigrupo05.repository;
+package com.trabalhoapi05.listaadocao.repository;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.stereotype.Repository;
 
-import com.trabalhoapigrupo05.model.RacasCaes;
+import com.trabalhoapi05.listaadocao.model.RacasCaes;
 
 @Repository
 public class RepositoryRacasCaes {
@@ -56,5 +56,22 @@ public class RepositoryRacasCaes {
     // método para adotar o cao e remover da lista
     public void adotaRaca(long id) {
         RacasCaes.removeIf(r -> r.getId() == id);
-    }    
+    }
+
+    public List<RacasCaes> buscarDoguinhos(long id) {
+        
+        // Itera sobre a lista de doguinhos encontrados e adiciona o caminho do arquivo
+        // no atributo "imagem".
+        for (RacasCaes doguinho : RacasCaes) {
+            // Construa o caminho do diretório onde o arquivo foi armazenado.
+            if (doguinho.getId() == id) {
+                String filePath = "C:\\tmp\\arquivo\\" + doguinho.getRaca() + ".png"; // ou a extensão correspondente ao
+                doguinho.setImagem(filePath); // tipo de arquivo
+            }
+        }
+        // Retorna uma resposta HTTP 200 OK com a lista de doguinhos encontrados no
+        // corpo
+        // da resposta.
+        return RacasCaes;
+    }
 }
